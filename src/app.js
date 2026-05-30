@@ -13,6 +13,9 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+// Trust Vercel proxy (so req.protocol returns 'https')
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
