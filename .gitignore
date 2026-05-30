@@ -1,0 +1,14 @@
+node_modules
+# Keep environment variables out of version control
+.env
+.env.local
+.env.production
+
+/generated/prisma
+
+# Uploads (local dev only — production pakai cloud storage)
+uploads/
+!uploads/.gitkeep
+
+# Vercel
+.vercel
